@@ -31,7 +31,7 @@ shadow-exclude = [
 shadow-ignore-shaped = false;   # Avoid drawing shadow on all shaped windows (see also: --detect-rounded-corners)
  
 # Opacity
-shadow-opacity = 0.65;                   # The translucency for shadows. (default .75)
+shadow-opacity = 0.6;                   # The translucency for shadows. (default .75)
 active-opacity = 1.0;
 menu-opacity = 1.0;                     # The opacity for menus. (default 1.0)
 #frame-opacity = 0.8;                   # Opacity of window titlebars and borders. (0.1 - 1.0)
@@ -63,6 +63,6 @@ detect-rounded-corners = true;
 wintypes:
 {
   tooltip = { fade = true; shadow = false; opacity = 0.75; };
-#  utility = { shadow = false; };
-#  dropdown_menu = { shadow = false; };
+  utility = { shadow = false; };
+  dropdown_menu = { shadow = false; };
 };

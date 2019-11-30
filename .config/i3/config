@@ -12,7 +12,7 @@
 set $mod Mod4
 
 # Gaps settings
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 gaps inner 7
 gaps outer 3
 
@@ -199,6 +199,9 @@ bindsym $mod+l layout toggle all
 
 # App bindings
 bindsym $mod+e exec dolphin
+
+# Scripts
+bindsym $mod+shift+h exec ~/.config/i3/hide.sh
 
 # Workspaces
 assign [class="discord"] $ws1
