@@ -144,16 +144,16 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $ws1A "1₂"
-set $ws2A "2₂"
-set $ws3A "3₂"
-set $ws4A "4₂"
-set $ws5A "5₂"
-set $ws6A "6₂"
-set $ws7A "7₂"
-set $ws8A "8₂"
-set $ws9A "9₂"
-set $ws10A "10₂"
+set $ws1A "1:A"
+set $ws2A "2:A"
+set $ws3A "3:A"
+set $ws4A "4:A"
+set $ws5A "5:A"
+set $ws6A "6:A"
+set $ws7A "7:A"
+set $ws8A "8:A"
+set $ws9A "9:A"
+set $ws10A "10:A"
 
 # Assign workspaces to outputs
 workspace $ws1A output $altMon
@@ -179,16 +179,16 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
-bindsym Ctrl+$mod+1 workspace $ws1A
-bindsym Ctrl+$mod+2 workspace $ws2A
-bindsym Ctrl+$mod+3 workspace $ws3A
-bindsym Ctrl+$mod+4 workspace $ws4A
-bindsym Ctrl+$mod+5 workspace $ws5A
-bindsym Ctrl+$mod+6 workspace $ws6A
-bindsym Ctrl+$mod+7 workspace $ws7A
-bindsym Ctrl+$mod+8 workspace $ws8A
-bindsym Ctrl+$mod+9 workspace $ws9A
-bindsym Ctrl+$mod+0 workspace $ws10A
+bindsym $mod+Mod1+1 workspace $ws1A
+bindsym $mod+Mod1+2 workspace $ws2A
+bindsym $mod+Mod1+3 workspace $ws3A
+bindsym $mod+Mod1+4 workspace $ws4A
+bindsym $mod+Mod1+5 workspace $ws5A
+bindsym $mod+Mod1+6 workspace $ws6A
+bindsym $mod+Mod1+7 workspace $ws7A
+bindsym $mod+Mod1+8 workspace $ws8A
+bindsym $mod+Mod1+9 workspace $ws9A
+bindsym $mod+Mod1+0 workspace $ws10A
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1

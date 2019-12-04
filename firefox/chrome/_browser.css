@@ -89,3 +89,12 @@
 		box-shadow: inset 0 -.5px var(--toolbox-border-bottom-color) !important;
 	}
 }
+
+:root{
+  scrollbar-color: #0079D3 #2E3645 !important;
+  scrollbar-width: thin !important;
+}
+
+* {
+  scrollbar-width: thin !important;
+}
