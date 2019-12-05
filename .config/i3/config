@@ -167,6 +167,17 @@ workspace $ws8A output $altMon
 workspace $ws9A output $altMon
 workspace $ws10A output $altMon
 
+workspace $ws1 output $mainMon
+workspace $ws2 output $mainMon
+workspace $ws3 output $mainMon
+workspace $ws4 output $mainMon
+workspace $ws5 output $mainMon
+workspace $ws6 output $mainMon
+workspace $ws7 output $mainMon
+workspace $ws8 output $mainMon
+workspace $ws9 output $mainMon
+workspace $ws10 output $mainMon
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -280,6 +291,7 @@ assign [class="jetbrains-idea-ce"] $ws3
 assign [class="jetbrains-webstorm"] $ws3
 assign [class="dev.cubxity.bytespy.impl.App"] $ws4A
 assign [class="resolve"] $ws6
+for_window [class="resolve" window_role="Secondary Screen"] $ws6A
 assign [class="Steam"] $ws7A
 assign [class="Lutris"] $ws7A
 assign [class="Wine"] $ws7
