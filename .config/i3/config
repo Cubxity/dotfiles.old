@@ -179,25 +179,29 @@ workspace $ws9 output $mainMon
 workspace $ws10 output $mainMon
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
+# Discord is primary on Alt screen
+bindsym $mod+1 workspace $ws1A
+# Firefox is primary on Alt screen
+bindsym $mod+2 workspace $ws2A
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
+# Testing stuff is primary on Alt screen
+bindsym $mod+4 workspace $ws4A
 bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
+# Spotify is primary on Alt screen
+bindsym $mod+8 workspace $ws8A
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
-bindsym Ctrl+$mod+1 workspace $ws1A
-bindsym Ctrl+$mod+2 workspace $ws2A
+bindsym Ctrl+$mod+1 workspace $ws1
+bindsym Ctrl+$mod+2 workspace $ws2
 bindsym Ctrl+$mod+3 workspace $ws3A
-bindsym Ctrl+$mod+4 workspace $ws4A
+bindsym Ctrl+$mod+4 workspace $ws4
 bindsym Ctrl+$mod+5 workspace $ws5A
 bindsym Ctrl+$mod+6 workspace $ws6A
 bindsym Ctrl+$mod+7 workspace $ws7A
-bindsym Ctrl+$mod+8 workspace $ws8A
+bindsym Ctrl+$mod+8 workspace $ws8
 bindsym Ctrl+$mod+9 workspace $ws9A
 bindsym Ctrl+$mod+0 workspace $ws10A
 
@@ -292,7 +296,8 @@ assign [class="jetbrains-webstorm"] $ws3
 assign [class="dev.cubxity.bytespy.impl.App"] $ws4A
 assign [class="resolve"] $ws6
 for_window [class="resolve" window_role="Secondary Screen"] $ws6A
-assign [class="Steam"] $ws7A
+for_window [class="Steam"] move to workspace $ws7A
+assign [class="csgo_linux64"] $ws7
 assign [class="Lutris"] $ws7A
 assign [class="Wine"] $ws7
 for_window [class="MultiMC5"] move to workspace $ws7A
