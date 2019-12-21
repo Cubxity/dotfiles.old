@@ -53,7 +53,7 @@
 
     --tab-hover-fill-opacity: 0.1 !important;
     --tab-focus-fill-opacity: 0.2 !important;
-    --tab-separator-opacity: 0.35 !important;
+    --tab-separator-opacity: 0.0 !important;
 }
 
 /* force darktext style buttons for selected tab */
