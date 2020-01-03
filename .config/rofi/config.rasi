@@ -1,6 +1,7 @@
 configuration {
   show-icons:         true;
   icon-theme:         "Paper";
+  theme:              "~/.cache/wal/colors-rofi-dark.rasi";
   cycle:              true;
   hide-scrollbar:     true;
   disable-history:    false;

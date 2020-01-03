@@ -55,8 +55,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # Screenshot
-bindsym Ctrl+Print exec "flameshot full -c"
+bindsym Ctrl+Print exec "flameshot screen -c"
 bindsym Shift+Print exec "flameshot gui -d 5000"
+bindsym Ctrl+Shift+Print exec ~/.config/i3/toggle-record.sh
 bindsym Print exec "flameshot gui"
 #bindsym Print exec "scrot -s -p '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f'"
 #bindsym Ctrl+Print exec "scrot -p '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f'"
@@ -293,9 +294,10 @@ assign [class="discord"] $ws1A
 assign [class="firefox"] $ws2A
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="jetbrains-webstorm"] $ws3
+assign [class="VSCodium"] $ws3
 assign [class="dev.cubxity.bytespy.impl.App"] $ws4A
 assign [class="resolve"] $ws6
-for_window [class="resolve" window_role="Secondary Screen"] $ws6A
+#for_window [class="resolve" window_role="Secondary Screen"] $ws6A
 for_window [class="Steam"] move to workspace $ws7A
 assign [class="csgo_linux64"] $ws7
 assign [class="Lutris"] $ws7A
@@ -303,6 +305,7 @@ assign [class="Wine"] $ws7
 for_window [class="MultiMC5"] move to workspace $ws7A
 for_window [class="Spotify"] move to workspace $ws8A
 for_window [class="Pulseeffects"] move to workspace $ws9A
+for_window [title="Sk1er mod installer"] floating toggle
 
 # Startup
 # exec_always --no-startuo-id /usr/bin/wal -R
