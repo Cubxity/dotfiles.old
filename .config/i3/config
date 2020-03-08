@@ -111,6 +111,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+bindsym $mod+shift+f fullscreen global
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -294,6 +295,7 @@ assign [class="discord"] $ws1A
 assign [class="firefox"] $ws2A
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="jetbrains-webstorm"] $ws3
+assign [class="jetbrains-studio"] $ws3
 assign [class="VSCodium"] $ws3
 assign [class="dev.cubxity.bytespy.impl.App"] $ws4A
 assign [class="resolve"] $ws6

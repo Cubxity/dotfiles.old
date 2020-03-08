@@ -88,19 +88,19 @@ font:
   normal:
     family: 'Iosevka'
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Regular
 
   # Bold font face
   bold:
     family: 'Iosevka'
     # The `style` can be specified to pick a specific face.
-    style: Heavy
+    style: Bold
 
   # Italic font face
   italic:
     family: 'Iosevka'
     # The `style` can be specified to pick a specific face.
-    style: Heavy Italic
+    style: Bold Italic
 
   # Point size
   size: 12.0
