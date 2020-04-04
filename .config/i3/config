@@ -13,8 +13,8 @@ set $mod Mod4
 
 # Gaps settings
 for_window [class="^.*"] border pixel 0
-gaps inner 7
-gaps outer 3
+#gaps inner 3
+#gaps outer 3
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -308,6 +308,7 @@ for_window [class="MultiMC5"] move to workspace $ws7A
 for_window [class="Spotify"] move to workspace $ws8A
 for_window [class="Pulseeffects"] move to workspace $ws9A
 for_window [title="Sk1er mod installer"] floating toggle
+for_window [title="Google Hangouts - Mozilla Firefox"] move to workspace $ws1A
 
 # Startup
 # exec_always --no-startuo-id /usr/bin/wal -R
