@@ -11,11 +11,9 @@ Inspired by [this](https://www.reddit.com/r/unixporn/comments/asoyk1/i3_attack_o
 - **WM**: i3-gaps
 - **Composition Manager**: Picom
 - **GTK Theme**: Materia-dark-compact
-- **Wallpaper**: [Titan](https://wall.alphacoders.com/big.php?i=607866&lang=Portuguese)
 - **Color scheme**: Pywal
 - **Terminal**: Alacritty
 - **Shell**: Fish
-- **Anime list**: [https://anilist.co/user/352980](https://anilist.co/user/352980)
-
-## Credits
-- **Firefox styles**: [https://www.reddit.com/r/FirefoxCSS/comments/c03b6m/chrome_i_am_fast_firefox_but_can_you_do_this/](https://www.reddit.com/r/FirefoxCSS/comments/c03b6m/chrome_i_am_fast_firefox_but_can_you_do_this/)
+- **Anime list**: [AniList](https://anilist.co/user/352980)
+- **FireFox userChrome**: [quietfox](https://github.com/coekuss/quietfox)
+- **FireFox theme**: [zeb](https://addons.mozilla.org/en-US/firefox/addon/zeb/)

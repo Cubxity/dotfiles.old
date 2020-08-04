@@ -285,7 +285,7 @@ mode "$mode_launcher" {
 bindsym $mod+o mode "$mode_launcher"
 
 # App bindings
-bindsym $mod+e exec dolphin
+bindsym $mod+e exec nautilus
 
 # Scripts
 bindsym $mod+shift+h exec ~/.config/i3/hide.sh

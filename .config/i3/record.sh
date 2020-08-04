@@ -1,12 +1,12 @@
 #!/bin/bash
 TMPFILE="$(mktemp -t recording-XXXXXXX).mkv"
 
-slop=$(slop -p 5 -f "%x %y %w %h %g %i") || exit 1
+slop=$(slop -f "%x %y %w %h %g %i") || exit 1
 read -r X Y W H G ID < <(echo $slop)
 
 notify-send "Recording started"
 
-CMD="ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y -r 60 "$TMPFILE""
+CMD="ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y -vcodec libx264 -preset ultrafast -qp 0 -pix_fmt yuv444p -r 60 "$TMPFILE""
 bash -c "exec -a ffmpeg-record ""$CMD"""
 
 notify-send 'Uploading...'
